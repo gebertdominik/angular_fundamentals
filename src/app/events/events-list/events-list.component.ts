@@ -19,12 +19,7 @@ export class EventsListComponent implements OnInit {
       city: 'London',
       country: 'England'
     }
-  };
-
-  handleEventClicked(data) { // we can handle only one parameter, but it could be an object
-    console.log('received:', data);
   }
-
   constructor() { }
 
   ngOnInit() {

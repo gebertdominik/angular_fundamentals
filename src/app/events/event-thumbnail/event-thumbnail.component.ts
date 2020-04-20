@@ -7,11 +7,15 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class EventThumbnailComponent implements OnInit {
 
-  @Input() event: any
+  @Input() event: any;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  logFoo() {
+    console.log('foo');
   }
 
 }

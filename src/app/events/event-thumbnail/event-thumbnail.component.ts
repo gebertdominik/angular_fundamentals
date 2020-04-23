@@ -14,8 +14,10 @@ export class EventThumbnailComponent implements OnInit {
   ngOnInit() {
   }
 
-  logFoo() {
-    console.log('foo');
+  getStartTimeClass() {
+    const isEarlyStart = this.event && this.event.time === '8:00 am';
+    return {green: isEarlyStart, bold: isEarlyStart}; // can return also a string 'green bold'
+                                                      // or an array ['green','bold]
   }
 
 }

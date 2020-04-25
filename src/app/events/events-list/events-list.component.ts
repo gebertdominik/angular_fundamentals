@@ -5,7 +5,6 @@ import {ToastrService} from '../../common/toastr.service';
 declare let toastr;
 
 @Component({
-  selector: 'app-events-list',
   templateUrl: './events-list.component.html',
   styleUrls: ['./events-list.component.css']
 })

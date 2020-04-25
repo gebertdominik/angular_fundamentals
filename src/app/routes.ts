@@ -6,7 +6,7 @@ import {Error404Component} from './errors/error404/error404.component';
 import {EventRouteActivatorService} from './events/event-details/event-route-activator.service';
 
 export const appRoutes: Routes = [
-  {path: 'events/new', component: CreateEventComponent}, // should be bofore events/:id to match it first
+  {path: 'events/new', component: CreateEventComponent, canDeactivate: ['canDeactivateCreateEvent']}, // should be before events/:id to match it first
   {path: 'events', component: EventsListComponent},
   {path: 'events/:id', component: EventDetailsComponent, canActivate: [EventRouteActivatorService]},
   {path: 'error404', component: Error404Component},

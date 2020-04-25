@@ -1,11 +1,13 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EventService {
 
-  constructor() { }
+  constructor() {
+  }
+
   readonly EVENTS = [
     {
       id: 1,
@@ -315,5 +317,9 @@ export class EventService {
 
   getEvents(): object {
     return this.EVENTS;
+  }
+
+  getEvent(id: number) {
+    return this.EVENTS.find(event => event.id === id);
   }
 }

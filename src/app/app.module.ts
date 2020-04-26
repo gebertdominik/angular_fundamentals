@@ -22,8 +22,7 @@ import {EventListResolverService} from './events/services/event-list-resolver/ev
     NavbarComponent,
     EventDetailsComponent,
     CreateEventComponent,
-    Error404Component
-  ],
+    Error404Component],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes)

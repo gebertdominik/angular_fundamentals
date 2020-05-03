@@ -5,3 +5,4 @@ export * from './shared/index';
 export * from './event-details/index';
 export * from './events-list/events-list.component';
 export * from './create-session/index';
+export * from './session-list/session-list.component';

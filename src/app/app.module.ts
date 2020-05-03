@@ -9,7 +9,8 @@ import {
   EventDetailsComponent,
   CreateEventComponent,
   EventListResolverService,
-  CreateSessionComponent
+  CreateSessionComponent,
+  SessionListComponent
 } from './events/index';
 import {AppComponent} from './app.component';
 import {NavbarComponent} from './events/navbar/navbar.component';
@@ -28,7 +29,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     EventDetailsComponent,
     CreateEventComponent,
     Error404Component,
-    CreateSessionComponent],
+    CreateSessionComponent,
+    SessionListComponent],
   imports: [
     BrowserModule,
     FormsModule,
